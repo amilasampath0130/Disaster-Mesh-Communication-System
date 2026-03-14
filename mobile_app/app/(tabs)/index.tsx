@@ -1,6 +1,8 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
+
+import { Route, router } from "expo-router";
 
 export default function HomeScreen() {
   return (
@@ -8,6 +10,18 @@ export default function HomeScreen() {
       <View style={styles.container}>
         <Text style={styles.title}>Home</Text>
         <Text style={styles.subtitle}>Start building your app here.</Text>
+        <TouchableOpacity
+          style={{
+            backgroundColor: "#007AFF",
+            paddingVertical: 12,
+            paddingHorizontal: 24,
+            borderRadius: 8,
+            marginTop: 16,
+          }}
+          onPress={() => {router.push("/(message)/sendMessage")}}
+        >
+          <Text style={{ color: "#fff", fontSize: 16 }}>Send Message</Text>
+        </TouchableOpacity>
       </View>
     </SafeAreaView>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 
 import { SafeAreaView } from "react-native-safe-area-context";
 
@@ -8,6 +8,7 @@ export default function TabTwoScreen() {
     <SafeAreaView style={styles.safeArea}>
       <View style={styles.container}>
         <Text style={styles.title}>Send message</Text>
+        
         <Text style={styles.text}>This is your second tab.</Text>
       </View>
     </SafeAreaView>
