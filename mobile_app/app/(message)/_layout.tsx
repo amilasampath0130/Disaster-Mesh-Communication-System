@@ -27,6 +27,30 @@ export default function GameLayout() {
           headerTitleAlign: "center",
         }}
       />
+      <Stack.Screen
+        name="location"
+        options={{
+          headerShown: true,
+          title: "Location",
+          headerTitleAlign: "center",
+        }}
+      />
+      <Stack.Screen
+        name="nodeStatus"
+        options={{
+          headerShown: true,
+          title: "Node Status",
+          headerTitleAlign: "center",
+        }}
+      />
+      <Stack.Screen
+        name="setting"
+        options={{
+          headerShown: true,
+          title: "Setting",
+          headerTitleAlign: "center",
+        }}
+      />
     </Stack>
   );
 }
